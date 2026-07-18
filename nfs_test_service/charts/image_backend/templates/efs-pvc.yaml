@@ -1,0 +1,14 @@
+# argocd_deploy_repo/nfs_test_service/charts/image_backend/templates/efs-pvc.yaml
+
+# efs-pvc.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-claim           # 이름을 Deployment에서 호출할 겁니다.
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: efs-sc  # 스토리지 Class Name 일치시키기
+  resources:
+    requests:
+      storage: 5Gi          # PV에 적은 용량과 똑같이 맞춰줍니다.

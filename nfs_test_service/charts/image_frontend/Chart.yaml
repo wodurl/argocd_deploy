@@ -1,0 +1,9 @@
+# argocd_deploy_repo/nfs_test_service/charts/image_frontend/Chart.yaml
+
+# charts/index/Chart.yaml
+apiVersion: v2
+name: image-frontend
+description: "image-frontend service"
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

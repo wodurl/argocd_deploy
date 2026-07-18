@@ -1,0 +1,73 @@
+apiVersion: v1
+entries:
+  msa-platform:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2026-07-02T11:40:44.585403779+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.1
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.2
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.2
+    description: index + market + post
+    digest: 5d81453992c111388a158d8896c16f27938f20a019cc5d5227eb5352a5877b85
+    name: msa-platform
+    type: application
+    urls:
+    - https://oli999.github.io/helm-microservice/msa-platform-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-07-02T11:40:44.575938656+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.1
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.1
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.1
+    description: index + market + post
+    digest: f59bb31cb3d1318a4e172703e4ce785a4edae70720a5ccea416aaedbf5813163
+    name: msa-platform
+    type: application
+    urls:
+    - https://oli999.github.io/helm-microservice/msa-platform-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-07-02T11:40:44.57017955+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.0
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.0
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.0
+    description: index + market + post
+    digest: 7af552685edbdb58380fd8cbbf97d93dc89c082fbd98a2090a9129951af60cdd
+    name: msa-platform
+    type: application
+    urls:
+    - https://oli999.github.io/helm-microservice/msa-platform-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-07-02T11:40:44.568198124+09:00"

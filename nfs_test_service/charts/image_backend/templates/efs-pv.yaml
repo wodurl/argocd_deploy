@@ -1,0 +1,19 @@
+# argocd_deploy_repo/nfs_test_service/charts/image_backend/templates/efs-pv.yaml
+
+apiVersion: v1
+kind: PersistentVolume
+metadata: 
+    name: efs-pv
+spec:
+    capacity: 
+        storage: 5Gi # 형식상 넣어준다 (크기는 동적으로 구성된다)
+    volumeMode: Filesystem
+    accessModes:
+        - ReadWriteMany # 여러(many) 개의 파드가 동시에 접근해서 사용할 수 있도록 설정 
+    PersistentVolumeReclaimPolicy: Retain
+    storageClassName: efs-sc
+    # Container Storage Interface 설정
+    csi:
+        driver: efs.csi.aws.com
+        volumeHandle: ""
+            

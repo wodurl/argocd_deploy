@@ -1,0 +1,25 @@
+# 최상위 경로의 values.yaml
+
+# templates/ingress-rule.yaml 파일에서 참조할 내용
+ingressRule:
+  namespace: "default"
+  host: "cloud-learning.site"
+
+image-frontend:
+  replicaCount: 2
+  image:
+    tag: "1.0"
+  service:
+    port: 80
+  containerPort: 80
+  enabled: true
+
+image-backend:
+  replicaCount: 2
+  image:
+    tag: "1.0"
+  service:
+    port: 8000
+  containerPort: 8000
+  enabled: true
+

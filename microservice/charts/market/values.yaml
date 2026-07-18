@@ -1,0 +1,11 @@
+# charts/market/values.yaml
+
+# 디폴드값 
+replicaCount: 2
+
+image:  
+  repository: myoli999/market-app
+  tag: "1.1"
+  pullPolicy: IfNotPresent
+
+containerPort: 8000

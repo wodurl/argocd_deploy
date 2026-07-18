@@ -1,0 +1,10 @@
+# charts/post/values.yaml
+
+replicaCount: 2
+
+image:  
+  repository: myoli999/post-app
+  tag: "1.1"
+  pullPolicy: IfNotPresent
+
+containerPort: 8000
