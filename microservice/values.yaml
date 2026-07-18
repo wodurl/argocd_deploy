@@ -1,4 +1,4 @@
-# 최상위 경로의 values.yaml
+# argocd_deploy_repo/microservice/values.yaml
 
 ingressRule:
   namespace: "default"
